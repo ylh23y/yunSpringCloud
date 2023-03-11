@@ -15,7 +15,6 @@
 
 
 
-
 ## 快速开始
 
 ### 分支说明
@@ -72,20 +71,8 @@ yun
      └── yun-xxl-job-admin -- 分布式定时任务管理台 [5004]
 ```
 
-### 本地开发 运行
-
-yun 提供了详细的[部署文档 wiki.yunx.vip](https://www.yuque.com/yun4cloud/yun/vsdox9)，包括开发环境安装、服务端代码运行、前端代码运行等。
-
-请务必**完全按照**文档部署运行章节 进行操作，减少踩坑弯路！！
-
-### 定制自己微服务
-
-[yun DIY](https://yun4cloud.com/#/common/diy)
-
-[yun ARCHETYPE](https://yun4cloud.com/#/common/archetype)
 
 ### Docker 运行
-
 
 ## 免费公开课
 

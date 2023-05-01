@@ -1,0 +1,6 @@
+com.yun4cloud.yun.common.core.config.TaskExecutorConfiguration
+com.yun4cloud.yun.common.core.config.JacksonConfiguration
+com.yun4cloud.yun.common.core.config.RedisTemplateConfiguration
+com.yun4cloud.yun.common.core.config.RestTemplateConfiguration
+com.yun4cloud.yun.common.core.util.SpringContextHolder
+com.yun4cloud.yun.common.core.config.WebMvcConfiguration

@@ -1,0 +1,3 @@
+com.yun4cloud.yun.common.feign.YunFeignAutoConfiguration
+com.yun4cloud.yun.common.feign.sentinel.SentinelAutoConfiguration
+com.yun4cloud.yun.common.feign.sentinel.handle.GlobalBizExceptionHandler

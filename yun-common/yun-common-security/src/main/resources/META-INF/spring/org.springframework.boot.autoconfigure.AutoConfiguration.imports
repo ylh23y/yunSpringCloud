@@ -1,0 +1,7 @@
+com.yun4cloud.yun.common.security.service.YunUserDetailsServiceImpl
+com.yun4cloud.yun.common.security.service.YunAppUserDetailsServiceImpl
+com.yun4cloud.yun.common.security.service.YunRedisOAuth2AuthorizationService
+com.yun4cloud.yun.common.security.service.YunRedisOAuth2AuthorizationConsentService
+com.yun4cloud.yun.common.security.component.YunSecurityInnerAspect
+com.yun4cloud.yun.common.security.component.YunSecurityMessageSourceConfiguration
+com.yun4cloud.yun.common.security.service.YunRemoteRegisteredClientRepository

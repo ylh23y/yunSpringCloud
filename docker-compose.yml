@@ -1,0 +1,90 @@
+version: '3'
+services:
+  yun-mysql:
+    build:
+      context: ./db
+    environment:
+      MYSQL_ROOT_HOST: "%"
+      MYSQL_ROOT_PASSWORD: root
+    restart: always
+    container_name: yun-mysql
+    image: yun-mysql
+
+  yun-redis:
+    image: redis:7.0.0
+    restart: always
+    container_name: yun-redis
+    hostname: yun-redis
+
+  yun-register:
+    build:
+      context: ./yun-register
+    restart: always
+    ports:
+      - 8848:8848
+    container_name: yun-register
+    hostname: yun-register
+    image: yun-register
+
+  yun-gateway:
+    build:
+      context: ./yun-gateway
+    restart: always
+    ports:
+      - 9999:9999
+    container_name: yun-gateway
+    hostname: yun-gateway
+    image: yun-gateway
+
+  yun-auth:
+    build:
+      context: ./yun-auth
+    restart: always
+    container_name: yun-auth
+    hostname: yun-auth
+    image: yun-auth
+
+  yun-upms:
+    build:
+      context: ./yun-upms/yun-upms-biz
+    restart: always
+    container_name: yun-upms
+    hostname: yun-upms
+    image: yun-upms
+
+  yun-monitor:
+    build:
+      context: ./yun-visual/yun-monitor
+    restart: always
+    ports:
+      - 5001:5001
+    container_name: yun-monitor
+    hostname: yun-monitor
+    image: yun-monitor
+
+  yun-sentinel:
+    build:
+      context: ./yun-visual/yun-sentinel-dashboard
+    restart: always
+    image: yun-sentinel
+    container_name: yun-sentinel
+    ports:
+      - 5003:5003
+
+  yun-codegen:
+    build:
+      context: ./yun-visual/yun-codegen
+    restart: always
+    container_name: yun-codegen
+    hostname: yun-codegen
+    image: yun-codegen
+
+  yun-job:
+    build:
+      context: ./yun-visual/yun-xxl-job-admin
+    restart: always
+    container_name: yun-job
+    hostname: yun-job
+    image: yun-job
+    ports:
+      - 5004:5004

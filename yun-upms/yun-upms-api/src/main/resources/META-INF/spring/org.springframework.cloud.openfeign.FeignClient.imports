@@ -1,0 +1,7 @@
+com.yun4cloud.yun.admin.api.feign.RemoteClientDetailsService
+com.yun4cloud.yun.admin.api.feign.RemoteDictService
+com.yun4cloud.yun.admin.api.feign.RemoteDeptService
+com.yun4cloud.yun.admin.api.feign.RemoteLogService
+com.yun4cloud.yun.admin.api.feign.RemoteTokenService
+com.yun4cloud.yun.admin.api.feign.RemoteUserService
+com.yun4cloud.yun.admin.api.feign.RemoteParamService

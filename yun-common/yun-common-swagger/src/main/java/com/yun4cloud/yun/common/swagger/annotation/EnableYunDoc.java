@@ -22,6 +22,7 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.context.annotation.Import;
 
 import java.lang.annotation.*;
+import java.util.AbstractSet;
 
 /**
  * 开启 yun spring doc
@@ -36,5 +37,4 @@ import java.lang.annotation.*;
 @EnableConfigurationProperties(SwaggerProperties.class)
 @Import({ SwaggerAutoConfiguration.class })
 public @interface EnableYunDoc {
-
 }
